@@ -1,0 +1,68 @@
+/******************************************************
+                        INDEX.HTML
+******************************************************/
+
+ul li a {
+  color: #003366;
+}
+/* Left */
+.importantLinks li {
+  color: #003366;
+  font-size: 20px;
+
+}
+
+.importantLinks a:hover {
+  color:  #00e699;
+  text-decoration: none;
+
+}
+
+.importantLinks {
+  font-size: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #00e699;
+}
+
+/* Center */
+.searches li {
+  color: #003366;
+  font-size: 20px;
+
+}
+.searches a:hover {
+  color:  #00e699;
+  text-decoration: none;
+
+}
+
+.searches {
+  font-size: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #00e699;
+}
+
+/* Right */
+.downloads li {
+  color: #003366;
+  font-size: 20px;
+
+}
+.downloads a:hover {
+  color:  #00e699;
+  text-decoration: none;
+
+}
+
+.downloads {
+  font-size: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #00e699;
+}
+
+/***************************
+Header Image Styles
+***************************/

@@ -1,0 +1,60 @@
+/***************************
+Nav Bar Styles
+***************************/
+nav {
+  margin: auto;
+  width: 800px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #003366;
+
+}
+
+nav li {
+    float: left;
+
+}
+
+nav li a {
+    display: block;
+    color: #00e699;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+nav li a:hover {
+    background-color: #00e699;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #003366;
+}
+.fourthviking {
+  font-size: 35px;
+  color: #00e699;
+  float: left;
+  margin-right: 50px;
+}
+
+/***************************
+Body Styles
+***************************/
+
+body {
+  background-color: #003366;
+  font-family: Raleway;
+}
+
+#pageContent {
+  margin: auto;
+  width: 800px;
+  height: 100%;
+  background-color: white;
+  padding: 25px;
+  border-radius: 20px;
+}

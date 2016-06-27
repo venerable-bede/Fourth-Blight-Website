@@ -1,0 +1,33 @@
+/******************************************************
+                        SEARCH
+******************************************************/
+body {
+  background-color: #003366; 
+}
+.searchBox {
+  text-align: center;
+  font-family: Montserrat;
+  margin-bottom: 15px;
+
+}
+.searchBox p {
+  color: white;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  font-family: Abel;
+  background: none;
+  border-radius: 25px;
+  border: 2px dotted;
+  padding: 20px;
+  color: #1affb2;
+  }
+
+/***************************
+Monster Search
+***************************/
+div.bumpMe {
+  margin-left: 40px;
+}
