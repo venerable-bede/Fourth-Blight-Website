@@ -176,15 +176,160 @@ $(document).ready(function(){
             "Sund"
           ];
 
+          var suffix = [
+            "the Shackled",
+            "the Lonely",
+            "the Ambitious",
+            "the Small",
+            "the Giant",
+            "the Weak",
+            "the Meek",
+            "the Righteous",
+            "the Young",
+            "the Fat",
+            "the Cold",
+            "the Bloody",
+            "the Ill",
+            "the Coward",
+            "the Silent",
+            "of Oakburn",
+            "of Karmswald",
+            "of The Reich",
+            "of Faykeep",
+            "of Westerheim",
+            "of the Barrows",
+            "of Allenfel",
+            "of the Chase",
+            "of Ernst",
+            "of the Hills",
+            "of Bellagin",
+            "of Oftburg",
+            "of Thurderry",
+            "of the Ward",
+            "the Civilized",
+            "of Hooftheim",
+            "the Plauged",
+            "the Cleaver",
+            "the Fleshling",
+            "the Mongrel",
+            "the Wyrm",
+            "of the Crow",
+            "the Tongue Splitter",
+            "the Charming",
+            "the Acolyte",
+            "the Betrothed",
+            "the Liar",
+            "the Keeper",
+            "of the Void",
+            "the Old",
+            "the Blind",
+            "the Gored",
+            "Toad-Bane",
+            "Toad-Bane",
+            "the Forgivable",
+            "the Splintered",
+            "the Keeper of Lies",
+            "the Drowning God",
+            "the Swine",
+            "of the Wilds",
+            "Thrice-Burried",
+            "the Breath of the Gods",
+            "the Cherished",
+            "the Vulgar",
+            "the Invincible",
+            "the Blasphemer",
+            "the Unbroken",
+            "the Unshackeled",
+            "the Mad",
+            "the Seer",
+            "Black-Lungs",
+            "the Long Traveled",
+            "the Weary",
+            "of the Fourth Blight",
+            "of the Final Hour",
+            "of the First Hour",
+            "the First Born",
+            "the Last Born",
+            "the Elder",
+            "the Senseless",
+            "the Reader",
+            "the Dark",
+            "the Enlightened",
+            "the Dull",
+            "follower of Kor",
+            "of the Tweleve",
+            "the the First",
+            "the the Second",
+            "the the Third",
+            "the the Fourth",
+            "the the Fifth",
+            "the the Sixth",
+            "the Godless",
+            "the Hefty",
+            "the Contagious",
+            "the Inverted",
+            "the Vessel",
+            "the Pastel",
+            "Pact-Bound",
+            "of Woe",
+            "the Herald",
+            "the Cursed",
+            "the Crimson",
+            "the White",
+            "the Black"
+
+          ];
+
+          var prefix = [
+            "Master",
+            "Protector",
+            "Tribune",
+            "Saint",
+            "Assistant",
+            "Earl",
+            "Prime",
+            "Chaplain",
+            "Templar",
+            "Professor",
+            "Assistant",
+            "Librarian",
+            "Sir",
+            "Lord",
+            "Imperator",
+            "Governor",
+            "Prince",
+            "Corporal",
+            "General",
+            "Commander",
+            "Exarch"
+          ];
+
           //Finds first name for a male
           var randomSelection = Math.floor(Math.random() * firstName.length);
           var names = firstName[randomSelection];
 
           //Finds last name
-          var randomSelection = Math.floor(Math.random() * lastName.length);
+          randomSelection = Math.floor(Math.random() * lastName.length);
           names = (names + " " + lastName[randomSelection]);
 
+          //Adds prefix
+          randomSelection = (Math.floor(Math.random() * 100) - 1);
+          if ( randomSelection <= 5)
+          {
+            randomSelection = Math.floor(Math.random() * prefix.length);
+            names = (prefix[randomSelection] + " " + names);
+          }
+
+          //Adds suffix
+          randomSelection = (Math.floor(Math.random() * 100) - 1);
+          if ( randomSelection <= 10)
+          {
+            randomSelection = Math.floor(Math.random() * suffix.length);
+            names = (names + " " + suffix[randomSelection]);
+          }
+
           return names;
+
         });
     });
 
@@ -365,7 +510,135 @@ $(document).ready(function(){
             "Sund"
           ];
 
-          //Finds first name for a male
+          var suffix = [
+            "the Shackled",
+            "the Lonely",
+            "the Ambitious",
+            "the Small",
+            "the Giant",
+            "the Weak",
+            "the Meek",
+            "the Righteous",
+            "the Young",
+            "the Fat",
+            "the Cold",
+            "the Bloody",
+            "the Ill",
+            "the Coward",
+            "the Silent",
+            "of Oakburn",
+            "of Karmswald",
+            "of The Reich",
+            "of Faykeep",
+            "of Westerheim",
+            "of the Barrows",
+            "of Allenfel",
+            "of the Chase",
+            "of Ernst",
+            "of the Hills",
+            "of Bellagin",
+            "of Oftburg",
+            "of Thurderry",
+            "of the Ward",
+            "the Civilized",
+            "of Hooftheim",
+            "the Plauged",
+            "the Cleaver",
+            "the Fleshling",
+            "the Mongrel",
+            "the Wyrm",
+            "of the Crow",
+            "the Tongue Splitter",
+            "the Charming",
+            "the Acolyte",
+            "the Betrothed",
+            "the Liar",
+            "the Keeper",
+            "of the Void",
+            "the Old",
+            "the Blind",
+            "the Gored",
+            "Toad-Bane",
+            "Toad-Bane",
+            "the Forgivable",
+            "the Splintered",
+            "the Keeper of Lies",
+            "the Drowning God",
+            "the Swine",
+            "of the Wilds",
+            "Thrice-Burried",
+            "the Breath of the Gods",
+            "the Cherished",
+            "the Vulgar",
+            "the Invincible",
+            "the Blasphemer",
+            "the Unbroken",
+            "the Unshackeled",
+            "the Mad",
+            "the Seer",
+            "Black-Lungs",
+            "the Long Traveled",
+            "the Weary",
+            "of the Fourth Blight",
+            "of the Final Hour",
+            "of the First Hour",
+            "the First Born",
+            "the Last Born",
+            "the Elder",
+            "the Senseless",
+            "the Reader",
+            "the Dark",
+            "the Enlightened",
+            "the Dull",
+            "follower of Kor",
+            "of the Tweleve",
+            "the the First",
+            "the the Second",
+            "the the Third",
+            "the the Fourth",
+            "the the Fifth",
+            "the the Sixth",
+            "the Godless",
+            "the Hefty",
+            "the Contagious",
+            "the Inverted",
+            "the Vessel",
+            "the Pastel",
+            "Pact-Bound",
+            "of Woe",
+            "the Herald",
+            "the Cursed",
+            "the Crimson",
+            "the White",
+            "the Black"
+
+          ];
+
+          var prefix = [
+            "Master",
+            "Protector",
+            "Tribune",
+            "Saint",
+            "Assistant",
+            "Baroness",
+            "Duchess",
+            "Greve",
+            "Templar",
+            "Professor",
+            "Assistant",
+            "Librarian",
+            "Madame",
+            "Lady",
+            "Imperator",
+            "Governess",
+            "Princess",
+            "Corporal",
+            "General",
+            "Commander",
+            "Exarch"
+          ];
+
+          //Finds first name for a female
           var randomSelection = Math.floor(Math.random() * firstName.length);
           var names = firstName[randomSelection];
 
@@ -373,6 +646,21 @@ $(document).ready(function(){
           var randomSelection = Math.floor(Math.random() * lastName.length);
           names = (names + " " + lastName[randomSelection]);
 
+          //Adds prefix
+          randomSelection = (Math.floor(Math.random() * 100) - 1);
+          if ( randomSelection <= 5)
+          {
+            randomSelection = Math.floor(Math.random() * prefix.length);
+            names = (prefix[randomSelection] + " " + names);
+          }
+
+          //Adds suffix
+          randomSelection = (Math.floor(Math.random() * 100) - 1);
+          if ( randomSelection <= 10)
+          {
+            randomSelection = Math.floor(Math.random() * suffix.length);
+            names = (names + " " + suffix[randomSelection]);
+          }
           return names;
         });
     });

@@ -1,13 +1,22 @@
 /***************************
 Content Styles
 ***************************/
+.defaultPage ul {
+  padding: 0;
+  list-style-type: none;
+}
 .defaultPage li {
-  color: #003366;
+  color: black;
+  font-size: 20px;
+
+}
+.defaultPage li a {
+  color: black;
   font-size: 20px;
 
 }
 .defaultPage a:hover {
-  color:  #00e699;
+  color: grey;
   text-decoration: none;
 
 }
@@ -16,26 +25,26 @@ Content Styles
   font-size: 50px;
   margin-left: auto;
   margin-right: auto;
-  color: #00e699;
+  color: black;
   text-align: center;
 }
 .defaultPage .inputButton {
   font-size: 15px;
-  color: #003366;
-  background-color: #00e699;
+  color: white;
+  background-color: black;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
-  border: 5px solid #00e699;
+  border: 5px solid black;
   padding: 5px;
   margin-bottom: 10px;
 }
 .defaultPage .inputButton:hover {
   font-size: 15px;
-  color: #00e699;
-  background-color: #003366;
+  color: black;
+  background-color: white;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
-  border: 5px solid #00e699;
+  border: 5px solid black;
   padding: 5px;
   margin-bottom: 10px;
 }
@@ -53,13 +62,15 @@ Nav Bar Styles
 nav {
   margin: auto;
   width: 800px;
+  margin-bottom: 20px;
+  margin-top: 5px;
 }
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #003366;
+    background-color: white;
 
 }
 
@@ -70,7 +81,7 @@ nav li {
 
 nav li a {
     display: block;
-    color: #00e699;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -78,14 +89,14 @@ nav li a {
 
 
 nav li a:hover {
-    background-color: #00e699;
+    background-color: black;
     border-radius: 10px;
     text-decoration: none;
-    color: #003366;
+    color: white;
 }
 .fourthviking {
   font-size: 35px;
-  color: #00e699;
+  color: black;
   float: left;
   margin-right: 50px;
 }
@@ -95,8 +106,8 @@ Body Styles
 ***************************/
 
 body {
-  background-color: #003366;
-  font-family: Raleway;
+  background-color: white;
+  font-family: 'Cinzel', serif;
 }
 
 #pageContent {
@@ -106,4 +117,5 @@ body {
   background-color: white;
   padding: 25px;
   border-radius: 20px;
+  box-shadow: 0px 0px 30px black;
 }
