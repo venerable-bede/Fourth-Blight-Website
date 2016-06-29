@@ -2,16 +2,18 @@
                         SEARCH
 ******************************************************/
 body {
-  background-color: #003366; 
+  background-color: white;
 }
 .searchBox {
   text-align: center;
-  font-family: Montserrat;
   margin-bottom: 15px;
 
 }
 .searchBox p {
-  color: white;
+  margin-top: 10px;
+  color: black;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 20px;
 }
 ul {
   list-style-type: none;
@@ -22,12 +24,18 @@ li {
   border-radius: 25px;
   border: 2px dotted;
   padding: 20px;
-  color: #1affb2;
+  color: black;
   }
+li b {
+  color: #26aa00;
+}
 
 /***************************
 Monster Search
 ***************************/
 div.bumpMe {
   margin-left: 40px;
+}
+div.bumpMe b {
+  color: black;
 }

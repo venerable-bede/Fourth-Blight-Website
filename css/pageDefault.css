@@ -16,7 +16,7 @@ Content Styles
 
 }
 .defaultPage a:hover {
-  color: grey;
+  color: #26aa00;
   text-decoration: none;
 
 }
@@ -56,6 +56,7 @@ Content Styles
 .defaultPage li {
   list-style-type: none;
 }
+
 /***************************
 Nav Bar Styles
 ***************************/
@@ -95,7 +96,7 @@ nav li a:hover {
     color: white;
 }
 .fourthviking {
-  font-size: 35px;
+  font-size: 34px;
   color: black;
   float: left;
   margin-right: 50px;
@@ -118,4 +119,29 @@ body {
   padding: 25px;
   border-radius: 20px;
   box-shadow: 0px 0px 30px black;
+}
+
+#pageContent h3 {
+  font-family: 'Covered By Your Grace', cursive;
+}
+
+#pageContent .inputButton {
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border: 5px solid black;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+#pageContent .inputButton:hover {
+  font-size: 15px;
+  color: black;
+  background-color: white;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border: 5px solid black;
+  padding: 5px;
+  margin-bottom: 10px;
 }
