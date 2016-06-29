@@ -176,7 +176,7 @@ $(document).ready(function(){
 
             "Over the next 2d6 days, your ears, nose and lips rot off, giving you disadvantage to persuation, checks and advantage to inimidate checks.",
 
-            "The next time you sleep or meditate, you are addlicted with horrible nightmares or visions. You wake up from long rests with 1d6 damage.",
+            "The next time you sleep or meditate, you are afflicted with horrible nightmares or visions. You wake up from long rests with 1d6 damage.",
 
             "You sprout a useless and twisted malformed arm from your side. You can hack it off for 3d6 damage.",
 
