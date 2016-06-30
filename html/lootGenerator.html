@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <!--JAVASCRIPT-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script src="../js/sideNav.js"></script>
+  <script src="../js/pageFade.js"></script>
   <script src="../js/lootGenerator.js"></script>
   <!--Icon -->
   <link rel="shortcut icon" type="image/png" href="../resources/img/skullIcon.ico.png">
@@ -20,16 +23,26 @@
   <header>
     <title>The Fourth Blight | Location Generator</title>
     <nav>
-      <a href="index.html"><b style="font-family: 'Neucha'; font-size: '35px';" class="fourthviking">FOURTHBLIGHT</b></a>
+      <a href="index.html" class="transition"><b style="font-family: 'Neucha'; font-size: '30px';" class="fourthviking">FOURTHBLIGHT</b></a>
       <ul>
-        <li><a href="generators.html">Generators</a></li>
-        <li><a href="downloads.html">Downloads</a></li>
-        <li><a href="furtherReading.html">Further Reading</a></li>
-        <li><a href="srd.html">SRD</a></li>
+        <li><a href="generators.html" class="transition">Generators</a></li>
+        <li><a href="downloads.html" class="transition">Downloads</a></li>
+        <li><a href="furtherReading.html" class="transition">Further Reading</a></li>
+        <li><a href="srd.html" class="transition">SRD</a></li>
         <li><a href="http://fourthviking.tumblr.com/" target="_blank">Blog</a></li>
     </nav>
   </header>
   <body>
+
+    <div id="mySidenav" class="sidenav">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+    </div>
+
+    <img src="../resources/img/fourthBlightLogo.png" class="logo" id="logo" style="margin-left: 50px; "onclick="navCtrl()">
+
     <div id="pageContent">
       <div class="defaultPage">
         Loot
