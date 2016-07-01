@@ -643,7 +643,7 @@ $(document).ready(function(){
           var names = firstName[randomSelection];
 
           //Finds last name
-          var randomSelection = Math.floor(Math.random() * lastName.length);
+          randomSelection = Math.floor(Math.random() * lastName.length);
           names = (names + " " + lastName[randomSelection]);
 
           //Adds prefix
