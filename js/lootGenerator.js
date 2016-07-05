@@ -103,7 +103,11 @@ $(document).ready(function(){
             "Draft of new law forbidding beer, dancing, and/or public-speaking among the lower classes throughout Estaria, not yet signed.",
             "d10 x 100 living snails with specially-made shells cast from pure silver worth 1 sp. Snails are sentient, communicate telepathically, and will beg PCs not to trade them away.",
             "Seed of a species of sentient, mobile tree.",
-            "Skull of gnoll in silver and ebony— actually a reliquary designed to mount and display the tooth of a gnollish saint."
+            "Skull of gnoll in silver and ebony— actually a reliquary designed to mount and display the tooth of a gnollish saint.",
+            "A broken lobster pot. It looks like it could be easily repaired.",
+            "A small copper idol. When looked at in the eyes, the idol imitates your facial expression.",
+            "A tattered canvas cape. Changes color based on the wearer's mood.",
+            "A small empty botte. Produces the scent of smoke when smelled."
           ];
 
           var randomSelection = Math.floor(Math.random() * itemInfo.length);

@@ -25,7 +25,13 @@ $(document).ready(function(){
               "Faith of",
               "Pure Ones of",
               "Enlightened of",
-              "Army of"
+              "Army of",
+              "Brotherhood of",
+              "Clan of",
+              "Tribe of",
+              "Men of",
+              "Final of",
+              "Blessed of"
             ];
 
           var deityName = [
@@ -128,7 +134,38 @@ $(document).ready(function(){
               "the Unseen Dancer",
               "the Myriad",
               "the Light Verrotten",
-              "the Low Charm"
+              "the Low Charm",
+              "the Dark Priestess",
+              "the Giant Lords",
+              "the Giant's Blood",
+              "the Elder Speech",
+              "the Baleful Ones",
+              "the Caustic Oppressor",
+              "the Noxious Flame",
+              "the Withering Beast",
+              "the Wretched Corruptor",
+              "the White North",
+              "the Depth Walker",
+              "the Spirit of the Field",
+              "the Great Protector",
+              "the Hidden Soul",
+              "the Mortal Fate",
+              "the Blood Moon",
+              "the Crier",
+              "the Putrid Cat",
+              "the Boar Hearth",
+              "the Hunt of Seasons",
+              "the Man-Eater",
+              "Vobeyus, God of Night",
+              "Ciborh, God of the Sea",
+              "the Last Poem",
+              "the Last Song",
+              "the First Words",
+              "the Creator's Mouth",
+              "the Shattered Worlds",
+              "the Broken Ox",
+              "the Oil",
+              "the Red Hillock"
             ];
 
 
