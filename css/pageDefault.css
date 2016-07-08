@@ -158,7 +158,12 @@ body {
   margin-bottom: 10px;
 }
 
-
+.inProgress {
+  font-family: "Neucha";
+  text-align: center;
+  font-size: 25px;
+  margin-top: 15px;
+}
 /***************************
 Side Nav
 ***************************/
