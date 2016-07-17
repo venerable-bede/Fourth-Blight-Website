@@ -1,0 +1,42 @@
+<div>
+  <div class="searchBox">
+    <p> Enter any spell information </p>
+    <input id="spell-text" type="text" ng-model="searchString" ng-change="searchSpell(searchString)">
+  </div>
+    <ul class="search-results" ng-if="searchString" ng-repeat="i in spellResults">
+      <li>
+        <h4>{{i.name}}</h4>
+        <div class="row" class="spell-item">
+            <div class="col-xs-12 spell-desc">{{i.desc}}</div>
+            <div class="col-xs-6">
+                <div class="row">
+                    <div class="col-xs-6 spell-header">Page Number:</div>
+                    <div class="col-xs-6">{{i.page}}</div>
+                    <div class="col-xs-6 spell-header">Range:</div>
+                    <div class="col-xs-6">{{i.range}}</div>
+                    <div class="col-xs-6 spell-header">Components:</div>
+                    <div class="col-xs-6">{{i.components}}</div>
+                    <div class="col-xs-6 spell-header">Material:</div>
+                    <div class="col-xs-6">{{i.material}}</div>
+                    <div class="col-xs-6 spell-header">Ritual:</div>
+                    <div class="col-xs-6">{{i.ritual}}</div>
+                </div>                
+              </div>
+              <div class="col-xs-6 spell-detail">
+                    <div class="col-xs-6 spell-header">Duration:</div>
+                    <div class="col-xs-6">{{i.duration}}</div>
+                    <div class="col-xs-6 spell-header">Concentration:</div>
+                    <div class="col-xs-6">{{i.concentration}}</div>
+                    <div class="col-xs-6 spell-header">Casting Time:</div>
+                    <div class="col-xs-6">{{i.casting_time}}</div>
+                    <div class="col-xs-6 spell-header">Level:</div>
+                    <div class="col-xs-6">{{i.level}}</div>
+                    <div class="col-xs-6 spell-header">School:</div>
+                    <div class="col-xs-6">{{i.school}}</div>
+                    <div class="col-xs-6 spell-header">Class:</div>
+                    <div class="col-xs-6">{{i.class}}</div>
+              </div>
+        </div>
+      </li>
+    </ul>
+</div>

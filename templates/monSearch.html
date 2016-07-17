@@ -1,0 +1,100 @@
+<div>
+    <div class="searchBox">
+        <p> Enter any monster information </p>
+        <input type="text" id="monster-text" ng-model="searchString" ng-change="searchMonsters(searchString)">
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="search-results" ng-if="searchString" ng-repeat="i in monsterResults">
+              <li>
+                <h4>{{i.name}}</h4>
+
+                <div class="row" class="spell-item">
+                  <div class="col-xs-6">
+                    <div class="row">
+                        <div class="col-xs-6 spell-header">Size:</div>
+                        <div class="col-xs-6">{{i.size || "N/A"}}</div>
+                        <div class="col-xs-6 spell-header">Armor Class:</div>
+                        <div class="col-xs-6">{{i.armor_class || "N/A"}}</div>
+                        <div class="col-xs-6 spell-header">Hit Points:</div>
+                        <div class="col-xs-6">{{i.hit_points || "N/A"}}</div>
+                        <div class="col-xs-6 spell-header">Hit Dice:</div>
+                        <div class="col-xs-6">{{i.hit_dice || "N/A"}}</div>
+                        <div class="col-xs-6 spell-header">Speed:</div>
+                        <div class="col-xs-6">{{i.speed || "N/A"}}</div>
+                        <div class="col-xs-6 spell-header">Type:</div>
+                        <div class="col-xs-6">{{i.type || "N/A"}}</div>
+                        <div class="col-xs-6 spell-header">Subtype:</div>
+                        <div class="col-xs-6">{{i.subtype || "N/A"}}</div>
+                        <div class="col-xs-6 spell-header">Alignment:</div>
+                        <div class="col-xs-6">{{i.alignment || "N/A"}}</div>
+                        <div class="col-xs-6 spell-header">Senses:</div>
+                        <div class="col-xs-6">{{i.senses || "N/A"}}</div>
+                        <div class="col-xs-6 spell-header">CR:</div>
+                        <div class="col-xs-6">{{i.challenge_rating || "N/A"}}</div>
+                    </div>               
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="row">
+                        <div class="col-xs-6 spell-header">Strength:</div>
+                        <div class="col-xs-6">{{i.strength || "N/A"}}</div>
+                        <div class="col-xs-6 spell-header">Dexterity:</div>
+                        <div class="col-xs-6">{{i.dexterity || "N/A"}}</div>
+                        <div class="col-xs-6 spell-header">Constitution:</div>
+                        <div class="col-xs-6">{{i.contitution || "N/A"}}</div>
+                        <div class="col-xs-6 spell-header">Intelligence:</div>
+                        <div class="col-xs-6">{{i.intelligence || "N/A"}}</div>
+                        <div class="col-xs-6 spell-header">Wisdom:</div>
+                        <div class="col-xs-6">{{i.widsom || "N/A"}}</div>
+                        <div class="col-xs-6 spell-header">Charisma:</div>
+                        <div class="col-xs-6">{{i.charisma || "N/A"}}</div>
+                        <div class="col-xs-6 spell-header">Wisdom Save:</div>
+                        <div class="col-xs-6">{{i.wisdom_save || "N/A"}}</div>
+                        <div class="col-xs-6 spell-header">Dmg Vuln:</div>
+                        <div class="col-xs-6">{{i.damage_vulnerabilities || "N/A"}}</div>
+                        <div class="col-xs-6 spell-header">Dmg Res:</div>
+                        <div class="col-xs-6">{{i.damage_resistances || "N/A"}}</div>
+                        <div class="col-xs-6 spell-header">Dmg Imm:</div>
+                        <div class="col-xs-6">{{i.damage_immunities || "N/A"}}</div>
+                        <div class="col-xs-6 spell-header">Cond Imm:</div>
+                        <div class="col-xs-6">{{i.condition_imunities || "N/A"}}</div>
+                    </div>               
+                  </div>
+                  <div class="col-xs-12 spell-header">Languages:</div>
+                  <div class="col-xs-12">
+                      {{i.languages}}
+                  </div>
+                  <div class="col-xs-12 spell-header">Special Abilities:</div>
+                  <div class="col-xs-12">
+                      <div class="bumpMe row"  ng-repeat="x in i.special_abilities">
+                            <b>{{x.name}}</b> <br>
+                            {{x.desc}}<br>
+                            {{x.attack_bonus}}
+                      </div>
+                  </div>
+                  <div class="col-xs-12 spell-header">Actions:</div>
+                  <div class="col-xs-12">
+                       <div class="bumpMe row" ng-repeat="y in i.actions">
+                            <b>{{y.name}}</b> <br>
+                            {{y.desc}}<br>
+                            {{y.attack_bonus}}
+                            {{y.damage_dice}}
+                            {{y.damage_bonus}}
+                      </div>
+                  </div>
+                  <div class="col-xs-12 spell-header">Legendary Actions:</div>
+                  <div class="col-xs-12">
+                       <div class="bumpMe row" ng-repeat="z in i.legendary_actions">
+                        <b>{{z.name}}</b> <br>
+                        {{z.desc}}<br>
+                        {{z.attack_bonus}}
+                        {{z.damage_dice}}
+                        {{z.damage_bonus}}
+                      </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+        </div>
+    </div>
+</div>

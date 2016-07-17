@@ -1,0 +1,26 @@
+.hexagon {
+  fill: #fff;
+  pointer-events: all;
+}
+.hexagon path {
+  -webkit-transition: fill 250ms linear;
+  transition: fill 250ms linear;
+}
+.hexagon :hover {
+  fill: #ffc0cb;
+}
+.hexagon .fill {
+  fill: #f00;
+}
+.mesh {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: 0.2;
+  pointer-events: none;
+}
+.border {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+  pointer-events: none;
+}

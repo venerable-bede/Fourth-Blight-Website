@@ -1,0 +1,26 @@
+<div>
+  <div class="searchBox">
+    <p> Enter any location information </p>
+    <input type="text" id="location-text" ng-model="searchString"  ng-change="searchLocations(searchString)">
+  </div>
+
+  <ul class="search-results" ng-if="searchString" ng-repeat="i in locationResults">
+    <li>
+      <h4>{{i.Unit_Name}}</h4>
+      <div class="row" class="spell-item">
+          <div class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-3 spell-header">Hex Number:</div>
+                <div class="col-xs-3">{{i.Hex_Location}}</div>
+                <div class="col-xs-3 spell-header">Zone Location:</div>
+                <div class="col-xs-3">{{i.Zone_Location}}</div>
+                <div class="col-xs-3 spell-header">Unit Type:</div>
+                <div class="col-xs-3">{{i.Unit_Type}}</div>
+                <div class="col-xs-12 spell-header">Description:</div>
+                <div class="col-xs-12">{{i.Description}}</div>
+            </div>               
+          </div>
+      </div>
+    </li>
+  </ul>
+</div>

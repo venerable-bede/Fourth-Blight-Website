@@ -1,0 +1,55 @@
+/******************************************************
+                        SEARCH
+******************************************************/
+body {
+  background-color: #fff;
+}
+.searchBox {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.searchBox p {
+  margin-top: 10px;
+  color: #000;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 20px;
+}
+.selected-search {
+  background-color: #dff0d8;
+}
+.search-results {
+  list-style-type: none;
+  margin-right: 35px;
+}
+.search-results li {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.3), 0 15px 12px rgba(0,0,0,0.22);
+  border-radius: 2px;
+  padding: 15px;
+  margin-bottom: 40px;
+}
+.search-results li h4 {
+  color: #26aa00;
+}
+/***************************
+Spell Search
+***************************/
+.spell-item {
+  margin: 5px;
+}
+.spell-desc {
+  margin-bottom: 15px;
+  max-height: 100px;
+  overflow: scroll;
+}
+.spell-header {
+  font-weight: bold;
+}
+/***************************
+Monster Search
+***************************/
+div.bumpMe {
+  margin-left: 40px;
+}
+div.bumpMe b {
+  color: #000;
+}
