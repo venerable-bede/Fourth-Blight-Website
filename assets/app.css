@@ -7,10 +7,7 @@
   transition: fill 250ms linear;
 }
 .hexagon :hover {
-  fill: #ffc0cb;
-}
-.hexagon .fill {
-  fill: #f00;
+  stroke-width: 5px;
 }
 .mesh {
   fill: none;

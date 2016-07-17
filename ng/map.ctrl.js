@@ -2,7 +2,7 @@ angular.module('FourthBlightApp')
 .controller('MapCtrl', function ($scope) {
   
   	var width = document.getElementById("pageContent").offsetWidth - 100,
-    height = 700,
+    height = 500,
     radius = 25;
 
 	var topology = hexTopology(radius, width, height);
@@ -15,7 +15,35 @@ angular.module('FourthBlightApp')
 	var svg = d3.select("#hex-map").append("svg")
 	    .attr("width", width)
 	    .attr("height", height);
+	    
+  	var defs = svg.append("defs");
+  	defs.append("pattern")
+      .attr("id", "forest")
+      .attr("x", 0)
+      .attr("y", 0)
+      .attr("height", 40)
+      .attr("width", 40)
+      .append("image")
+      .attr("xlink:href","/hexicons/tree.svg")
+      .attr("x", 0)
+      .attr("y", 0)
+      .attr("height", 40)
+      .attr("width", 40)
 
+    defs.append("pattern")
+      .attr("id", "mountain")
+      .attr("x", 0)
+      .attr("y", 0)
+      .attr("height", 40)
+      .attr("width", 40)
+      .append("image")
+      .attr("xlink:href","/hexicons/mountain.svg")
+      .attr("x", 0)
+      .attr("y", 0)
+      .attr("height", 40)
+      .attr("width", 40)
+
+      
 	svg.append("g")
 	    .attr("class", "hexagon")
 	  .selectAll("path")
@@ -23,40 +51,24 @@ angular.module('FourthBlightApp')
 	  .enter().append("path")
 	    .attr("d", function(d) { return path(topojson.feature(topology, d)); })
 	    .attr("class", function(d) { return d.fill ? "fill" : null; })
+	    .style("fill", function(d) { 
+	    	var seed =  Math.floor(Math.random() * 4) + 1;
+	    	if (seed == 1)
+	    		return "url(#mountain)"
+	    	else if (seed == 2)
+	    	 	return "url(#forest)"
+	    	else 
+	    		return null
+	    })
 	    .on("mousedown", mousedown)
-	    .on("mousemove", mousemove)
-	    .on("mouseup", mouseup);
 
 	svg.append("path")
 	    .datum(topojson.mesh(topology, topology.objects.hexagons))
 	    .attr("class", "mesh")
 	    .attr("d", path);
 
-	var border = svg.append("path")
-	    .attr("class", "border")
-	    .call(redraw);
-
-	var mousing = 0;
-
 	function mousedown(d) {
-	  mousing = d.fill ? -1 : +1;
-	  mousemove.apply(this, arguments);
-	}
-
-	function mousemove(d) {
-	  if (mousing) {
-	    d3.select(this).classed("fill", d.fill = mousing > 0);
-	    border.call(redraw);
-	  }
-	}
-
-	function mouseup() {
-	  mousemove.apply(this, arguments);
-	  mousing = 0;
-	}
-
-	function redraw(border) {
-	  border.attr("d", path(topojson.mesh(topology, topology.objects.hexagons, function(a, b) { return a.fill ^ b.fill; })));
+	    d3.select(this).attr("class", "border")
 	}
 
 	function hexTopology(radius, width, height) {
